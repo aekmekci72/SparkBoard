@@ -11,7 +11,14 @@ from projects import projects_bp
 
 app = Flask(__name__)
 CORS(
-    app
+    app,
+    resources={
+        r"/api/*": {
+            "origins": [
+                "https://spark-board-nine.vercel.app"
+            ]
+        }
+    }
 )
 app.register_blueprint(tasks_bp)
 app.register_blueprint(projects_bp)
