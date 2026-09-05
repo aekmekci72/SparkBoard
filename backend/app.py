@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 import firebase
@@ -11,14 +11,7 @@ from projects import projects_bp
 
 app = Flask(__name__)
 CORS(
-    app,
-    resources={
-        r"/api/*": {
-            "origins": [
-                "https://spark-board-nine.vercel.app"
-            ]
-        }
-    }
+    app
 )
 app.register_blueprint(tasks_bp)
 app.register_blueprint(projects_bp)
