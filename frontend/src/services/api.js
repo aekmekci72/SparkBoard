@@ -38,8 +38,6 @@ async function request(endpoint, options = {}) {
 }
 
 
-// Tasks
-
 export function getTasks() {
   return request("/api/tasks");
 }
@@ -63,9 +61,6 @@ export function deleteTask(id) {
     method: "DELETE",
   });
 }
-
-
-// Projects
 
 export function getProjects() {
   return request("/api/projects");
