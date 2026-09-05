@@ -1,6 +1,6 @@
 import { auth } from "./firebase";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = import.meta.env.API_URL;
 
 async function request(endpoint, options = {}) {
   const user = auth.currentUser;
