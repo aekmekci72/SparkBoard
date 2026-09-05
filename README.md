@@ -1,8 +1,10 @@
 # SparkBoard
 
-**SparkBoard** is a personal project and task management workspace built to help users organize their work into projects and track tasks from creation through completion. Tasks can be subsections of larger projects.
+SparkBoard is a full-stack project and task management web application designed to help users organize work into projects and track tasks from creation through completion.
 
-The application includes authentication, project management, task management, task filtering, task status tracking, and a dashboard-style workspace.
+Users can create an account, manage projects, create and organize tasks, set priorities and statuses, and search or filter their workspace through a responsive dashboard.
+
+Live Demo: https://spark-board-nine.vercel.app/
 
 ---
 
@@ -60,7 +62,7 @@ The application includes authentication, project management, task management, ta
 
 ## Development Time
 
-I spent approximately 4 hours building SparkBoard.
+I spent approximately 4 hours building SparkBoard (and 1 hour deploying).
 
 ---
 
